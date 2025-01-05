@@ -1,0 +1,174 @@
+body {
+    background-color: #F8F9FA;
+}
+
+#title {
+    color: #212121;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#input-el {
+    border: 1px solid #00BFFF;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 7px;
+    color: #212121;
+    box-shadow: -3px 3px #00BFFF;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#input-time {
+    border: 1px solid #00BFFF;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: #212121;
+    box-shadow: -3px 3px #00BFFF;
+    display: block;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#input-time:hover {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+#input-time:focus {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+#input-el:hover {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+#input-el:focus {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+
+#save-btn {
+    color: #212121;
+    background-color: white;
+    border: 1px solid #00BFFF;
+    padding: 5px;
+    font-size: 20px;
+    display: inline;
+    box-shadow: -3px 3px #00BFFF;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#save-btn:hover {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+.chore-button {
+    background-color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    box-shadow: -3px 3px red;
+    display: block;
+    border: 1px solid red;
+    padding: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.chore-button:hover {
+    box-shadow: -3px 3px #00BFFF;
+}
+
+.delete-btn {
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    box-shadow: -3px 3px #00BFFF;
+    border: 1px solid #00BFFF;
+    padding: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.delete-btn:hover {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+#delete-all {
+    color: #212121;
+    background-color: white;
+    border: 1px solid #00BFFF;
+    padding: 5px;
+    font-size: 20px;
+    display: inline;
+    box-shadow: -3px 3px #00BFFF;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+
+#delete-all:hover {
+    box-shadow: -3px 3px #FF6F61;
+}
+
+.confirm-btn {
+    color: whitesmoke;
+    background-color: #212121;
+    border: 1px solid #82fba5;
+    padding: 5px;
+    font-size: 20px;
+    display: inline;
+    box-shadow: -3px 3px #82fba5;
+    margin-top: 5px;
+    width: 45px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.confirm-btn:hover {
+    box-shadow: -3px 3px #00BFFF;
+}
+
+.confirm-text {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #00BFFF;
+}
+
+.decline-btn {
+    color: whitesmoke;
+    background-color: #212121;
+    border: 1px solid red;
+    padding: 5px;
+    font-size: 20px;
+    display: inline;
+    box-shadow: -3px 3px red;
+    margin-top: 10px;
+    width: 45px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.decline-btn:hover {
+    box-shadow: -3px 3px #00BFFF;
+}
+
+.delete-container {
+    background-color: #212121;
+    border-radius: 7px;
+}
+

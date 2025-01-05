@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s022epft0h",
+  "description": "https://scrimba.com/s022epft0h/s0patijso8/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
