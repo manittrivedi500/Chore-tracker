@@ -1,8 +1,12 @@
-let saveBtn = document.getElementById("save-btn")
-let inputEl = document.getElementById("input-el")
-let inputTime = document.getElementById("input-time")
-let choreList = document.getElementById("chore-list")
-let deleteAll = document.getElementById("delete-all")
+let saveBtn = document.getElementById("save-btn");
+let inputEl = document.getElementById("input-el");
+let inputTime = document.getElementById("input-time");
+let choreList = document.getElementById("chore-list");
+let deleteAll = document.getElementById("delete-all");
+let timeList = document.getElementById("time-list")
+
+timeList.style.display = "none";
+
 
 deleteAll.addEventListener("dblclick", function() {
     choreList.innerHTML = ""
@@ -36,22 +40,47 @@ saveBtn.addEventListener("click", function () {
         return;
     }
 
-    const choreButton = document.createElement("button");
+    const choreButton = document.createElement("p");
     choreButton.textContent = inputValue;
     choreButton.className = "chore-button";
     
     const deleteBtn = document.createElement("button");
     deleteBtn.className = "delete-btn";
     deleteBtn.innerHTML = "Delete";
+
+    const finishBtn = document.createElement("button");
+    finishBtn.className = "finish-btn";
+    finishBtn.innerHTML = "Start Chore?";
     
     const deleteContainer = document.createElement("dialog");
     deleteContainer.className = "delete-container";
-    
-    choreButton.addEventListener("click", function () {
-        alert(`you finished the following chore! ${inputValue}`);
-        choreButton.style.boxShadow = "-3px 3px #82fba5";
-        choreButton.style.textDecoration = "line-through";
+
+    let first_click = true;
+    const dateTime = document.createElement("p");
+
+    finishBtn.addEventListener("click", function() {
+        if (first_click) {
+            const now1 = new Date();
+            const currentDateTime1 = now1;
+            timeList.style.display = "block";
+            finishBtn.innerHTML = "Chore Started, Click to Finish";
+            first_click = false;
+            dateTime.innerHTML = "The chore " + inputValue + " was started on " + now1;
+        } else {
+            const now2 = new Date();
+            const currentDateTime2 = now2;
+            choreButton.remove();
+            deleteBtn.remove();
+            confirmBtn.remove();
+            declineBtn.remove();
+            confirmText.remove();
+            deleteContainer.close();
+            finishBtn.remove();
+            alert(`you finished the following chore! ${inputValue}`);
+            dateTime.innerHTML = "The chore " + inputValue + " was finshed on " + now2;
+        }
     });
+
     
     deleteBtn.addEventListener("click", function() {
         confirmText.style.display = "block";
@@ -71,6 +100,7 @@ saveBtn.addEventListener("click", function () {
             declineBtn.remove();
             confirmText.remove();
             deleteContainer.close();
+            finishBtn.remove();
         });
         
         declineBtn.addEventListener("click", function () {
@@ -82,6 +112,10 @@ saveBtn.addEventListener("click", function () {
     choreList.appendChild(choreButton);
     
     choreList.appendChild(deleteBtn);
+
+    choreList.appendChild(finishBtn);
+
+    timeList.appendChild(dateTime);
     
     deleteContainer.appendChild(confirmBtn);
     
@@ -90,6 +124,10 @@ saveBtn.addEventListener("click", function () {
     deleteContainer.appendChild(confirmText);
     
     choreList.appendChild(deleteContainer);
+
+
+
+
 
     inputEl.value = "";
     inputTime.value = "";
