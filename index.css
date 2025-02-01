@@ -1,216 +1,224 @@
 body {
-    background-color: #F8F9FA;
+    background-color: #E3F2FD;
     text-align: center;
 }
 
 #title {
-    color: #212121;
+    color: #424242;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
 }
 
 #input-el {
-    border: 1px solid #00BFFF;
+    border-radius: 10px;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 7px;
-    color: #212121;
-    box-shadow: -3px 3px #00BFFF;
+    color: #424242;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    background-color: #64B5F6;
+    border: solid black 1px;
 }
 
 #input-time {
-    border: 1px solid #00BFFF;
+    border-radius: 10px;
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 5px;
-    color: #212121;
-    box-shadow: -3px 3px #00BFFF;
+    color: #424242;
     display: block;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     margin-left: auto;
     margin-right: auto;
+    background-color: #64B5F6;
+    border: solid black 1px;
 }
 
 #input-time:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
 }
 
 #input-time:focus {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
 }
 
 #input-el:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
 }
 
 #input-el:focus {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
 }
 
 
 #save-btn {
-    color: #212121;
-    background-color: white;
-    border: 1px solid #00BFFF;
-    padding: 5px;
+    color: #424242;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 20px;
     display: inline;
-    box-shadow: -3px 3px #00BFFF;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    background-color: #64B5F6;
+    border: solid black 1px;
 }
 
 #save-btn:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
+    border: solid black 3px;
 }
 
 .chore-button {
-    background-color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 2px;
     font-size: 20px;
-    box-shadow: -3px 3px red;
     display: block;
-    border: 1px solid red;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-}
-
-.chore-button:hover {
-    box-shadow: -3px 3px #00BFFF;
+    background-color: #64B5F6;
+    color: #424242;
 }
 
 .delete-btn {
-    background-color: white;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 20px;
-    box-shadow: -3px 3px #00BFFF;
-    border: 1px solid #00BFFF;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    background-color: #64B5F6;
+    color: #424242;
+    border: solid black 1px;
 }
 
 .delete-btn:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
+    border: solid black 3px;
 }
 
 .finish-btn {
-    background-color: white;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 20px;
-    box-shadow: -3px 3px #00BFFF;
-    border: 1px solid #00BFFF;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     margin-left: 5px;
+    background-color: #64B5F6;
+    color: #424242;
+    border: solid black 1px;
 }
 
 .finish-btn:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
+    border: solid black 3px;
 }
 
 .in-progress-btn {
-    background-color: white;
     margin-top: 5px;
     margin-bottom: 10px;
     font-size: 20px;
-    box-shadow: -3px 3px #00BFFF;
-    border: 1px solid #00BFFF;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
     margin-left: 5px;
+    background-color: #64B5F6;
+    border: solid black 1px;
 }
 
 .in-progress-btn:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
+    border: solid black 3px;
 }
 
 #delete-all {
-    color: #212121;
-    background-color: white;
-    border: 1px solid #00BFFF;
-    padding: 5px;
+    color: #424242;
+    border-radius: 10px;
+    padding: 10px;
     font-size: 20px;
     display: inline;
-    box-shadow: -3px 3px #00BFFF;
     margin-left: auto;
     margin-right: auto;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    background-color: #64B5F6;
+    border: solid black 1px;
     
 }
 
 #delete-all:hover {
-    box-shadow: -3px 3px #FF6F61;
+    background-color: #81C784;
+    border: solid black 3px;
 }
 
 .confirm-btn {
-    color: whitesmoke;
-    background-color: #212121;
-    border: 1px solid #82fba5;
+    color: #424242;
+    background-color: #81C784;
+    border-radius: 10px;
     padding: 5px;
     font-size: 20px;
     display: inline;
-    box-shadow: -3px 3px #82fba5;
     margin-top: 5px;
     width: 45px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    border: solid black 1px;
 }
 
 .confirm-btn:hover {
-    box-shadow: -3px 3px #00BFFF;
+    background-color: #64B5F6;
+    border: solid black 3px;
 }
 
 .confirm-text {
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
-    color: #00BFFF;
+    color: #424242;
 }
 
 .decline-btn {
-    color: whitesmoke;
-    background-color: #212121;
-    border: 1px solid red;
+    color: #424242;
+    background-color: #81C784;
+    border-radius: 10px;
     padding: 5px;
     font-size: 20px;
     display: inline;
-    box-shadow: -3px 3px red;
     margin-top: 10px;
     width: 45px;
     font-family: "Poppins", serif;
     font-weight: 500;
     font-style: normal;
+    border: solid black 1px;
 }
 
 .decline-btn:hover {
-    box-shadow: -3px 3px #00BFFF;
+    background-color: #64B5F6;
+    border: solid black 3px;
 }
 
 .delete-container {
-    background-color: #212121;
+    background-color: #FAF3E0;
     border-radius: 7px;
 }
 
@@ -220,7 +228,8 @@ body {
     top: 10px;
     left: 10px;
     font-family: "Poppins", serif;
-    background-color: #00BFFF;
-    border-radius: 15px;
+    background-color: #64B5F6;
+    border-radius: 10px;
     padding: 15px;
+    border: dotted black 2px;
 }

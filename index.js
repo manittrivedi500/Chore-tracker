@@ -66,18 +66,15 @@ saveBtn.addEventListener("click", function () {
             finishBtn.innerHTML = "Chore Started, Click to Finish";
             first_click = false;
             dateTime.innerHTML = "The chore " + inputValue + " was started on " + now1;
+            choreButton.style.backgroundColor = "#FFD54F"
         } else {
             const now2 = new Date();
             const currentDateTime2 = now2;
-            choreButton.remove();
-            deleteBtn.remove();
-            confirmBtn.remove();
-            declineBtn.remove();
-            confirmText.remove();
-            deleteContainer.close();
-            finishBtn.remove();
-            alert(`you finished the following chore! ${inputValue}`);
             dateTime.innerHTML = "The chore " + inputValue + " was finshed on " + now2;
+            choreButton.style.backgroundColor = "#A5D6A7"
+            deleteBtn.innerHTML = "Remove";
+            confirmText.innerHTML = "Are you sure you want to remove this event?";
+            finishBtn.remove();
         }
     });
 
@@ -86,7 +83,7 @@ saveBtn.addEventListener("click", function () {
         confirmText.style.display = "block";
         confirmText.style.fontSize = "20px";
         confirmBtn.style.display = "block";
-        deleteContainer.showModal()
+        deleteContainer.showModal();
         confirmBtn.innerHTML = "Yes";
         declineBtn.style.display = "block";
         declineBtn.innerHTML = "No";
